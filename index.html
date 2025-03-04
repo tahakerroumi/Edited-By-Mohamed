@@ -2,35 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Edited by Mohamed</title>
+    <title>Editing Simo | Video Editor & Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="background-video.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay"></div>
+    </div>
+
     <header>
-      <a href="#" class="logo">Mohamed Kerroumi</a>
-      <nav class="navigation">
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <div class="logo">
+        <h1>Mohamed Kerroumi</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
 
-    <section class="main">
-        <div>
-            <h2>Hello Internet, I'm Mohamed Kerroumi<br><span>Visual Content Designer<span></h2>
-            <h3></h3>
-            <a href="#projects" class="main-btn"></a>
-            <!-- <div class="social icons" -->
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Mohamed Kerroumi</h1>
+          <h2>Visual Content Designer</h2>
+          <p>🎥 Crafting pro edits & standout designs</p>
+          <p>💼 Creating work clients are proud to showcase</p>
+          <p>📩 DM for premium service</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="cta-button">View My Work</a>
+            <a href="#contact" class="cta-button secondary">Contact Me</a>
+          </div>
         </div>
+      </section>
 
-    </section>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>I'm a professional video editor and visual designer specializing in creating high-quality content that stands out. With expertise in various editing tools and techniques, I deliver premium results that exceed client expectations.</p>
+              <h3>Tools I Use</h3>
+              <div class="tools">
+                <div class="tool">
+                  <i class="fas fa-film"></i>
+                  <span>Adobe After Effects</span>
+                </div>
+                <div class="tool">
+                  <i class="fas fa-video"></i>
+                  <span>Adobe Premiere Pro</span>
+                </div>
+                <div class="tool">
+                  <i class="fas fa-cut"></i>
+                  <span>CapCut</span>
+                </div>
+                <div class="tool">
+                  <i class="fas fa-palette"></i>
+                  <span>Canva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="project-gallery">
+            <div class="project-item">
+              <div class="project-preview">
+                <iframe src="https://drive.google.com/file/d/1N4-Pp3p3HNYaX1r5delYWmftkd97o1fy/preview" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <h3>Video Editing Showcase</h3>
+                <p>A collection of my best video editing work demonstrating various styles and techniques.</p>
+                <a href="https://drive.google.com/file/d/1N4-Pp3p3HNYaX1r5delYWmftkd97o1fy/view?usp=sharing" target="_blank" class="view-project">View Full Project</a>
+              </div>
+            </div>
+            <div id="more-projects"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fab fa-instagram"></i>
+                <div class="contact-details">
+                  <h3>Instagram</h3>
+                  <a href="https://www.instagram.com/editing_simo/" target="_blank">@editing_simo</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <div class="contact-details">
+                  <h3>WhatsApp</h3>
+                  <a href="https://wa.me/212705600021" target="_blank">+212 705 600 021</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>Editing Simo</h2>
+            <p>Visual Content Designer</p>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/editing_simo/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/212705600021" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Editing Simo. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
